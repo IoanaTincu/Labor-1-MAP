@@ -28,6 +28,8 @@ public class ElektronikShop {
         this.pricesKeyboard = pricesKeyboard;
     }
 
+    //pre: pricesKeyboard - ein Array mit den Preisen der Tastaturen
+    //post: der kleinste Preis
     public int billigste_Tastatur()
     {
         int minimum = Integer.MAX_VALUE;
@@ -39,6 +41,8 @@ public class ElektronikShop {
         return minimum;
     }
 
+    //pre: pricesKeyboard, pricesUSB
+    //post: der kleinste Preis aus beiden Arrays
     public int teuerster_Gegenstand()
     {
         int maximum = -1;
@@ -53,6 +57,7 @@ public class ElektronikShop {
         return maximum;
     }
 
+    //wir suchen den grossten Preis kleiner als das Budget
     public int teuerstes_USB(int budget)
     {
         int maximum = -1;
@@ -64,6 +69,7 @@ public class ElektronikShop {
         return maximum;
     }
 
+    //post: die maximale Geldsumme die fur Tastatur und USB ausgegeben werden kann
     public int maximaler_Geldbetrag(int budget)
     {
         int maximum = -1, priceKeyboard, remainedBudget, priceUSB;
@@ -74,7 +80,8 @@ public class ElektronikShop {
             remainedBudget = budget - priceKeyboard;
             priceUSB = teuerstes_USB(remainedBudget);
 
-            if(priceKeyboard + priceUSB > maximum && priceUSB != -1)
+            if(priceKeyboard + priceUSB > maximum && priceUSB != -1) // priceUSB = -1 wenn es keinen USB gibt,
+                // dessen Preis <= Budget ist
                 maximum = priceKeyboard + priceUSB;
         }
 
