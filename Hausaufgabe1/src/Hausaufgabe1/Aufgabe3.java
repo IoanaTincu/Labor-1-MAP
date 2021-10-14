@@ -14,6 +14,8 @@ public class Aufgabe3 {
         return array;
     }
 
+    //pre: number1, number2 Zahlen als String
+    //post: die Summe der Zahlen mit den Ziffern als Elemente eines Arrays
     public static int[] Summe(String number1, String number2)
     {
         int digitsSum;
@@ -29,9 +31,9 @@ public class Aufgabe3 {
             {
                 result[i+1] = digitsSum%10;
                 if(i != 0)
-                    array1[i-1] = array1[i-1] + 1;
+                    array1[i-1] = array1[i-1] + 1; // der Ziffer vorne wird eine Einz addiert
                 else
-                    result[i] = 1;
+                    result[i] = 1; // wenn die Summe der ersten Ziffern > 10 ist
             }
             else
                 result[i+1] = digitsSum;
@@ -50,7 +52,8 @@ public class Aufgabe3 {
         {
             array1 = conversion(number2);
             array2 = conversion(number1);
-            result = new int[number1.length()+1];
+            result = new int[number1.length()+1]; // Konvention: negative Differenz wird in einem
+            // grosseren Array gespeichert
         }
         else
         {
@@ -84,7 +87,7 @@ public class Aufgabe3 {
         int digitsMultiplication, carry = 0;
         int[] result = new int[number1.length()+1];
         int[] array1 = conversion(number1);
-        int convertedDigit = digit.charAt(0) - 48;
+        int convertedDigit = digit.charAt(0) - 48; // '0' = 48
 
         for(int i = array1.length-1; i >= 0; i--)
         {
@@ -98,6 +101,9 @@ public class Aufgabe3 {
         return result;
     }
 
+    //pre: number1, number2 Zahlen als String
+    //post: der Quotient der Zahlen mit den Ziffern als Elemente eines Arrays
+    //throws: ein Exception falls wir durch Null teilen wollen
     public static int[] Division(String number1, String digit) throws Exception
     {
         int digitsDivision, carry = 0;
