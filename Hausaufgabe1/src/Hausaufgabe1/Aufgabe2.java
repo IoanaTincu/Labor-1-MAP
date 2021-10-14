@@ -2,6 +2,8 @@ package Hausaufgabe1;
 
 public class Aufgabe2 {
 
+    //pre: array enthalt positive Zahlen
+    //post: das Maximum
     public static int maximale_Zahl(int[] array)
     {
         int maximum = -1;
@@ -13,6 +15,8 @@ public class Aufgabe2 {
         return maximum;
     }
 
+    //pre: array enthalt positive Zahlen
+    //post: das Maximum
     public static int minimale_Zahl(int[] array)
     {
         int minimum = Integer.MAX_VALUE;
@@ -24,6 +28,8 @@ public class Aufgabe2 {
         return minimum;
     }
 
+    //pre: array enthalt positive Zahlen
+    //post: die Summe der Zahlen
     public static int sum_of_elements(int[] array)
     {
         int sum = 0;
@@ -34,11 +40,13 @@ public class Aufgabe2 {
         return sum;
     }
 
+    //maximale Summe von n-1 Zahlen = Summe - Minimum
     public static int maximale_Summe(int[] array)
     {
         return sum_of_elements(array) - minimale_Zahl(array);
     }
 
+    //minimale Summe von n-1 Zahlen = Summe - Maximum
     public static int minimale_Summe(int[] array)
     {
         return sum_of_elements(array) - maximale_Zahl(array);

@@ -2,6 +2,8 @@ package Hausaufgabe1;
 
 public class Aufgabe3 {
 
+    //pre: Nummer als String
+    //post: Nummer mit den Ziffern als Elemente eines Arrays
     public static int[] conversion(String number)
     {
         int[] array = new int[number.length()];
