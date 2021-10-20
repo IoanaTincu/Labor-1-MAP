@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b07272e-9601-494b-86a3-0d86dc880630" name="Changes" comment="" />
+    <list default="true" id="4b07272e-9601-494b-86a3-0d86dc880630" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/Aufgabe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/Aufgabe1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/Aufgabe2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/Aufgabe2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/Aufgabe3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/Aufgabe3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/ElektronikShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/ElektronikShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hausaufgabe1/src/Hausaufgabe1/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +26,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Labor2_MAP" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hausaufgabe1.Main" />
+      <module name="Labor-1-MAP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Hausaufgabe1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -34,6 +61,23 @@
       <workItem from="1634153023927" duration="8314000" />
       <workItem from="1634198619626" duration="458000" />
       <workItem from="1634208608804" duration="7928000" />
+      <workItem from="1634280202189" duration="1286000" />
+      <workItem from="1634546526889" duration="562000" />
+      <workItem from="1634556832616" duration="1889000" />
+      <workItem from="1634592306226" duration="91000" />
+      <workItem from="1634592485979" duration="573000" />
+      <workItem from="1634624131663" duration="865000" />
+      <workItem from="1634625684887" duration="1472000" />
+      <workItem from="1634627895240" duration="214000" />
+      <workItem from="1634628374453" duration="271000" />
+      <workItem from="1634629440570" duration="353000" />
+      <workItem from="1634629946917" duration="216000" />
+      <workItem from="1634630303804" duration="451000" />
+      <workItem from="1634632963456" duration="815000" />
+      <workItem from="1634647244230" duration="732000" />
+      <workItem from="1634650904751" duration="215000" />
+      <workItem from="1634651246532" duration="2188000" />
+      <workItem from="1634750432678" duration="10462000" />
     </task>
     <servers />
   </component>

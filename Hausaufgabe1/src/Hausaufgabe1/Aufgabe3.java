@@ -2,8 +2,11 @@ package Hausaufgabe1;
 
 public class Aufgabe3 {
 
-    //pre: Nummer als String
-    //post: Nummer mit den Ziffern als Elemente eines Arrays
+    /**
+     *
+     * @param number Nummer als String
+     * @return Nummer mit den Ziffern als Elemente eines Arrays
+     */
     public static int[] conversion(String number)
     {
         int[] array = new int[number.length()];
@@ -14,8 +17,12 @@ public class Aufgabe3 {
         return array;
     }
 
-    //pre: number1, number2 Zahlen als String
-    //post: die Summe der Zahlen mit den Ziffern als Elemente eines Arrays
+    /**
+     *
+     * @param number1 Zahl als String
+     * @param number2 Zahl als String
+     * @return die Summe der Zahlen mit den Ziffern als Elemente eines Arrays
+     */
     public static int[] Summe(String number1, String number2)
     {
         int digitsSum;
@@ -42,6 +49,12 @@ public class Aufgabe3 {
         return result;
     }
 
+    /**
+     *
+     * @param number1 Zahl als String
+     * @param number2 Zahl als String
+     * @return die Differenz der Zahlen mit den Ziffern als Elemente eines Arrays
+     */
     public static int[] Differenz(String number1, String number2)
     {
         int digitsDifference, carry = 0;
@@ -62,8 +75,6 @@ public class Aufgabe3 {
             result = new int[number1.length()];
         }
 
-        for(int i = 0; i < result.length; i++)
-            result[i] = 0;
         for(int i = array1.length-1; i >= 0; i--)
         {
             digitsDifference = array1[i] - array2[i] - carry;
@@ -82,6 +93,12 @@ public class Aufgabe3 {
         return result;
     }
 
+    /**
+     *
+     * @param number1 Zahl als String
+     * @param digit   Ziffer als String
+     * @return die Multiplikation der Zahlen mit den Ziffern als Elemente eines Arrays
+     */
     public static int[] Multiplikation(String number1, String digit)
     {
         int digitsMultiplication, carry = 0;
@@ -101,12 +118,16 @@ public class Aufgabe3 {
         return result;
     }
 
-    //pre: number1, number2 Zahlen als String
-    //post: der Quotient der Zahlen mit den Ziffern als Elemente eines Arrays
-    //throws: ein Exception falls wir durch Null teilen wollen
+    /**
+     *
+     * @param number1 Zahl als String
+     * @param digit   Ziffer als String
+     * @return der Quotient der Zahlen mit den Ziffern als Elemente eines Arrays
+     * @throws Exception falls wir durch Null teilen wollen
+     */
     public static int[] Division(String number1, String digit) throws Exception
     {
-        int digitsDivision, carry = 0;
+        int carry = 0;
         int[] result = new int[number1.length()];
         int[] array1 = conversion(number1);
         int convertedDigit = digit.charAt(0) - 48;

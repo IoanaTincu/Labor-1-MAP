@@ -2,8 +2,11 @@ package Hausaufgabe1;
 
 public class Aufgabe1 {
 
-    //pre: array enthalt die nicht aufgerundeten Noten
-    //post: ein Array mit den nicht ausreichenden Noten wird zuruckgegeben
+    /**
+     *
+     * @param array enthalt die nicht aufgerundeten Noten
+     * @return ein Array mit den nicht ausreichenden Noten wird zuruckgegeben
+     */
     public static int[] nicht_ausreichende_Noten(int[] array)
     {
         int[] newArray = new int[array.length];
@@ -23,8 +26,11 @@ public class Aufgabe1 {
         return finalArray;
     }
 
-    //pre: array enthalt die nicht aufgerundeten Noten
-    //post: der Durchschnittswert der aufgerundeten Noten wird zuruckgegeben
+    /**
+     *
+     * @param array enthalt die nicht aufgerundeten Noten
+     * @return der Durchschnittswert der aufgerundeten Noten wird zuruckgegeben
+     */
     public static double durchschnittswert(int[] array)
     {
         int sum = 0;
@@ -36,8 +42,11 @@ public class Aufgabe1 {
         return (double) sum/array.length;
     }
 
-    //pre: array enthalt die nicht aufgerundeten Noten
-    //post: das Array mit den aufgerundeten Noten wird zuruckgegeben
+    /**
+     *
+     * @param array enthalt die nicht aufgerundeten Noten
+     * @return das Array mit den aufgerundeten Noten wird zuruckgegeben
+     */
     public static int[] aufgerundete_Noten(int[] array)
     {
         int[] newArray = new int[array.length];
@@ -54,8 +63,11 @@ public class Aufgabe1 {
         return newArray;
     }
 
-    //pre: array enthalt die nicht aufgerundeten Noten
-    //post: die maximale Note wird zuruckgegeben
+    /**
+     *
+     * @param array enthalt die nicht aufgerundeten Noten
+     * @return die maximale Note wird zuruckgegeben
+     */
     public static int maximale_abgerundete_Note(int[] array)
     {
         int maximum = -1;
