@@ -85,7 +85,7 @@ public class ElektronikShop {
      * @return der maximale Geldbetrag, der fur Tastatur + USB ausgegeben wird. Wenn es nicht genug
      * Geld fur beide gibt, wird -1 zuruckgegeben
      */
-    public int maximaler_Geldbetrag(int budget)
+    public int hochster_Geldbetrag(int budget)
     {
         int maximum = -1, priceKeyboard, remainedBudget, priceUSB;
 

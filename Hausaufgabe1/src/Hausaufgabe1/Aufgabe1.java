@@ -4,18 +4,18 @@ public class Aufgabe1 {
 
     /**
      *
-     * @param array enthalt die nicht aufgerundeten Noten
+     * @param arrayNoten enthalt die nicht aufgerundeten Noten
      * @return ein Array mit den nicht ausreichenden Noten wird zuruckgegeben
      */
-    public static int[] nicht_ausreichende_Noten(int[] array)
+    public static int[] nicht_ausreichende_Noten(int[] arrayNoten)
     {
-        int[] newArray = new int[array.length];
+        int[] newArray = new int[arrayNoten.length];
         int index = 0;
 
-        for(int i = 0; i < array.length; i++)
-            if(array[i] < 38) // 38 und 39 werden schon auf 40 aufgerundet
+        for(int i = 0; i < arrayNoten.length; i++)
+            if(arrayNoten[i] < 38) // 38 und 39 werden schon auf 40 aufgerundet
             {
-                newArray[index] = array[i];
+                newArray[index] = arrayNoten[i];
                 index++;
             }
 
@@ -28,54 +28,54 @@ public class Aufgabe1 {
 
     /**
      *
-     * @param array enthalt die nicht aufgerundeten Noten
+     * @param arrayNoten enthalt die nicht aufgerundeten Noten
      * @return der Durchschnittswert der aufgerundeten Noten wird zuruckgegeben
      */
-    public static double durchschnittswert(int[] array)
+    public static double durchschnittswert(int[] arrayNoten)
     {
         int sum = 0;
-        array = aufgerundete_Noten(array); // wir berechnen den Durchschnittswert der Noten nach der Aufrundung
+        arrayNoten = aufgerundete_Noten(arrayNoten); // wir berechnen den Durchschnittswert der Noten nach der Aufrundung
 
-        for(int i = 0; i < array.length; i++)
-            sum += array[i];
+        for(int i = 0; i < arrayNoten.length; i++)
+            sum += arrayNoten[i];
 
-        return (double) sum/array.length;
+        return (double) sum/arrayNoten.length;
     }
 
     /**
      *
-     * @param array enthalt die nicht aufgerundeten Noten
+     * @param arrayNoten enthalt die nicht aufgerundeten Noten
      * @return das Array mit den aufgerundeten Noten wird zuruckgegeben
      */
-    public static int[] aufgerundete_Noten(int[] array)
+    public static int[] aufgerundete_Noten(int[] arrayNoten)
     {
-        int[] newArray = new int[array.length];
+        int[] newArray = new int[arrayNoten.length];
 
-        for(int i = 0; i < array.length; i++)
-            if(array[i] < 38)
-                newArray[i] = array[i]; // Noten < 38 werden nicht aufgerundet
+        for(int i = 0; i < arrayNoten.length; i++)
+            if(arrayNoten[i] < 38)
+                newArray[i] = arrayNoten[i]; // Noten < 38 werden nicht aufgerundet
             else
-                if(5 - array[i]%5 < 3) // Differenz zwischen der Note und dem nachsten Vielfachen von 5
-                    newArray[i] = array[i] + 5 - array[i]%5;
+                if(5 - arrayNoten[i]%5 < 3) // Differenz zwischen der Note und dem nachsten Vielfachen von 5
+                    newArray[i] = arrayNoten[i] + 5 - arrayNoten[i]%5;
                 else
-                    newArray[i] = array[i];
+                    newArray[i] = arrayNoten[i];
 
         return newArray;
     }
 
     /**
      *
-     * @param array enthalt die nicht aufgerundeten Noten
+     * @param arrayNoten enthalt die nicht aufgerundeten Noten
      * @return die maximale Note wird zuruckgegeben
      */
-    public static int maximale_abgerundete_Note(int[] array)
+    public static int hochste_abgerundete_Note(int[] arrayNoten)
     {
         int maximum = -1;
-        array = aufgerundete_Noten(array);
+        arrayNoten = aufgerundete_Noten(arrayNoten);
 
-        for (int i = 0; i < array.length; i++)
-            if(array[i] > maximum)
-                maximum = array[i];
+        for (int i = 0; i < arrayNoten.length; i++)
+            if(arrayNoten[i] > maximum)
+                maximum = arrayNoten[i];
 
         return maximum;
     }

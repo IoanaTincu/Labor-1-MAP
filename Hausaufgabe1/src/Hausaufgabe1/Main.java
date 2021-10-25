@@ -20,15 +20,15 @@ public class Main {
         for (int i = 0; i < newArray1.length; i++)
             System.out.print(newArray1[i] + " ");
 
-        int maximum = Aufgabe1.maximale_abgerundete_Note(array);
+        int maximum = Aufgabe1.hochste_abgerundete_Note(array);
         System.out.println("\nMaximum: " + maximum);
 
 
         System.out.println("\n\tAufgabe 2");
-        maximum = Aufgabe2.maximale_Zahl(array);
+        maximum = Aufgabe2.hochste_Zahl(array);
         System.out.println("Maximale Zahl: " + maximum);
 
-        int minimum = Aufgabe2.minimale_Zahl(array);
+        int minimum = Aufgabe2.kleinste_Zahl(array);
         System.out.println("Minimale Zahl: " + minimum);
 
         int maximal_sum = Aufgabe2.maximale_Summe(array);
@@ -45,7 +45,7 @@ public class Main {
         System.out.print("Zahl 2 fur Differenz: ");
         String number2 = sc.nextLine();
 
-        int[] array1 = Aufgabe3.Differenz(number1, number2);
+        int[] array1 = Aufgabe3.kalkuliere_Differenz(number1, number2);
         int i = 0;
 
         while (i < array1.length && array1[i] == 0)
@@ -68,7 +68,7 @@ public class Main {
         System.out.print("Zahl 2 fur Summe: ");
         number2 = sc.nextLine();
 
-        int[] array2 = Aufgabe3.Summe(number1, number2);
+        int[] array2 = Aufgabe3.kalkuliere_Summe(number1, number2);
         i = 0;
 
         while (i < array2.length && array2[i] == 0)
@@ -86,7 +86,7 @@ public class Main {
         System.out.print("Ziffer fur Multiplikation: ");
         number2 = sc.nextLine();
 
-        int[] array3 = Aufgabe3.Multiplikation(number1, number2);
+        int[] array3 = Aufgabe3.kalkuliere_Multiplikation(number1, number2);
         i = 0;
 
         while (i < array3.length && array3[i] == 0)
@@ -105,7 +105,7 @@ public class Main {
         number2 = sc.nextLine();
 
         try {
-            int[] array4 = Aufgabe3.Division(number1, number2);
+            int[] array4 = Aufgabe3.kalkuliere_Division(number1, number2);
             i = 0;
 
             while (i < array4.length && array4[i] == 0)
@@ -136,7 +136,7 @@ public class Main {
         int mostExpensiveUSB = shop.teuerstes_USB(30);
         System.out.println("Teuerstes USB: " + mostExpensiveUSB);
 
-        int maximumBudget = shop.maximaler_Geldbetrag(60);
+        int maximumBudget = shop.hochster_Geldbetrag(60);
         System.out.println("Maximaler Geldbetrag: " + maximumBudget);
     }
 }

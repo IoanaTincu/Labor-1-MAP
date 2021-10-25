@@ -23,7 +23,7 @@ public class Aufgabe3 {
      * @param number2 Zahl als String
      * @return die Summe der Zahlen mit den Ziffern als Elemente eines Arrays
      */
-    public static int[] Summe(String number1, String number2)
+    public static int[] kalkuliere_Summe(String number1, String number2)
     {
         int digitsSum;
         int[] result = new int[number1.length()+1];
@@ -55,7 +55,7 @@ public class Aufgabe3 {
      * @param number2 Zahl als String
      * @return die Differenz der Zahlen mit den Ziffern als Elemente eines Arrays
      */
-    public static int[] Differenz(String number1, String number2)
+    public static int[] kalkuliere_Differenz(String number1, String number2)
     {
         int digitsDifference, carry = 0;
         int[] array1, array2;
@@ -99,7 +99,7 @@ public class Aufgabe3 {
      * @param digit   Ziffer als String
      * @return die Multiplikation der Zahlen mit den Ziffern als Elemente eines Arrays
      */
-    public static int[] Multiplikation(String number1, String digit)
+    public static int[] kalkuliere_Multiplikation(String number1, String digit)
     {
         int digitsMultiplication, carry = 0;
         int[] result = new int[number1.length()+1];
@@ -125,7 +125,7 @@ public class Aufgabe3 {
      * @return der Quotient der Zahlen mit den Ziffern als Elemente eines Arrays
      * @throws Exception falls wir durch Null teilen wollen
      */
-    public static int[] Division(String number1, String digit) throws Exception
+    public static int[] kalkuliere_Division(String number1, String digit) throws Exception
     {
         int carry = 0;
         int[] result = new int[number1.length()];
